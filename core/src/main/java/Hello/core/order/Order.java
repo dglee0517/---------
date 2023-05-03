@@ -1,13 +1,13 @@
 package Hello.core.order;
 
 public class Order {
-    private Long memeberId;
+    private Long memberId;
     private String itemName;
     private int itemPrice;
     private int discountPrice;
 
-    public Order(Long memeberId, String itemName, int itemPrice, int discountPrice) {
-        this.memeberId = memeberId;
+    public Order(Long memberId, String itemName, int itemPrice, int discountPrice) {
+        this.memberId = memberId;
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.discountPrice = discountPrice;
@@ -17,12 +17,12 @@ public class Order {
         return itemPrice - discountPrice;
     }
 
-    public Long getMemeberId() {
-        return memeberId;
+    public Long getMemberId() {
+        return memberId;
     }
 
-    public void setMemeberId(Long memeberId) {
-        this.memeberId = memeberId;
+    public void setMemberId(Long memberId) {
+        this.memberId = memberId;
     }
 
     public String getItemName() {
@@ -52,7 +52,7 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "memeberId=" + memeberId +
+                "memberId=" + memberId +
                 ", itemName='" + itemName + '\'' +
                 ", itemPrice=" + itemPrice +
                 ", discountPrice=" + discountPrice +
